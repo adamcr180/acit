@@ -1,7 +1,6 @@
 import dow
 
 def getDayOfTheWeekForUserDate():
-    """Prompts user for specific date parts and prints the calculated weekday."""
     print("--- Day of the Week Finder ---")
     
     user_month = int(input("Enter month (1-12): "))
