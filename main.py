@@ -9,11 +9,11 @@ def getDayOfTheWeekForUserDate():
     
     weekday_result = dow.getDayOfTheWeek(user_year, user_month, user_day)
     
-    print(f"\nThe date {user_month}-{user_day}-{user_year} is a {weekday_result}.\n")
+    print(f"The date {user_month}-{user_day}-{user_year} is a {weekday_result}.")
 
 if __name__ == "__main__":
     dow.makeCalendar()
     
-    print("\n" + "="*40 + "\n")
+    print("" + "="*40 + "")
     
     getDayOfTheWeekForUserDate()
