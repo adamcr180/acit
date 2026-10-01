@@ -29,7 +29,6 @@ DAYS_IN_MONTHS = {
 }
 
 def isLeapYear(year):
-    """Returns True if a year is a leap year, False otherwise."""
     if year % 400 == 0:
         return True
     if year % 100 == 0:
@@ -37,7 +36,6 @@ def isLeapYear(year):
     return year % 4 == 0
 
 def getDayOfTheWeek(year, month, day):
-    """Calculates and returns the day of the week string for a given date."""
     last_two_digits = year % 100
     twelves_count = last_two_digits // 12
     remainder_of_twelve = last_two_digits % 12
@@ -63,7 +61,6 @@ def getDayOfTheWeek(year, month, day):
     return WEEKDAY_NAMES[weekday_index]
 
 def makeCalendar():
-    """Prints out the date and day of the week for every single day in 2026."""
     year_target = 2026
     
     for month in range(1, 13):
